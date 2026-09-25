@@ -6,6 +6,7 @@ import { useState } from 'react'
 export default function Contador(){
     const [contador, setContador] = useState(0)
     const [input, setInput] = useState("Digite alguma coisa")
+    const [select, setSelect] = useState("Escolha uma opção")
 
     function mais(){
         if (contador < 10){
@@ -22,6 +23,11 @@ export default function Contador(){
     function alterar(e){
         let valor = e.target.value
         setInput(valor)
+    }
+
+    function alterarSelect(e) {
+        let valor = e.target.value
+        setSelect(valor)
     }
 
     return(
@@ -49,6 +55,21 @@ export default function Contador(){
                 <div className="input">
                     <h2>{input}</h2>
                     <input type="text" onChange={alterar} />
+                </div>
+            </section>
+
+            <section>
+                <h2>
+                    Input Mutável
+                </h2>
+                <div className="input">
+                    <h2>{select}</h2>
+                    <select onChange={alterarSelect}>
+                        <option value="Robson">Robson</option>
+                        <option value="Bruno">Bruno</option>
+                        <option value="Diogo">Diogo</option>
+                        <option value="Neymar Jr.">Neymar Jr.</option>
+                    </select>
                 </div>
             </section>
         </div>

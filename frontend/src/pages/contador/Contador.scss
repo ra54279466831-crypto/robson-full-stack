@@ -36,6 +36,17 @@
             font-size: 2em
         }
 
+        .input {
+                gap: 20px;
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+                
+                select, input {
+                    font-size: 30px;
+                }
+            }
+
         .contador {
             display: flex;
             gap: 20px;
@@ -45,6 +56,8 @@
 
                 padding: 2px 10px;
             }
+
+            
         }
     }
 }
