@@ -17,6 +17,9 @@ export default function Home() {
             <li>
               <Link to='/api-contador' className='link'>API Contador</Link>
             </li>
+            <li>
+              <Link to='/change' className='link'>Change</Link>
+            </li>
           </ul>
         </nav>
       </section>

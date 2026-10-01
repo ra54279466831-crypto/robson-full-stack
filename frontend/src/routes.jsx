@@ -2,6 +2,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/home/Home'
 import Contador from './pages/contador/Contador'
 import ApiContador from './pages/api/Api'
+import Change from './pages/change/Change'
+
 
 export default function Navegacao(){
     return(
@@ -9,6 +11,7 @@ export default function Navegacao(){
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/contador' element={<Contador />} />
+                <Route path='/change' element={<Change />} />
                 <Route path='/api-contador' element={<ApiContador />} />
             </Routes>
         </BrowserRouter>
