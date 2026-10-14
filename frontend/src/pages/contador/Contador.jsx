@@ -2,6 +2,7 @@ import './Contador.scss'
 import { Link } from 'react-router-dom'
 
 import { useState } from 'react'
+import Header from '../../components/header'
 
 export default function Contador(){
     const [contador, setContador] = useState(0)
@@ -32,13 +33,7 @@ export default function Contador(){
 
     return(
         <div className="contador-page">
-            <header>
-                <Link to='/'>
-                    Voltar
-                </Link>
-                
-                <h1>Contador | React</h1>
-            </header>
+            <Header titulo="Página Contador" />
             <section>
                 <h2>Contador</h2>
                 <div className="contador">

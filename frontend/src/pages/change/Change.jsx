@@ -1,8 +1,13 @@
 import './Change.scss'
 import { useState } from "react"
 import { Link } from 'react-router-dom'
+import Header from '../../components/header'
 
 export default function Change(){
+    const [n1t, setN1t] = useState(0)
+    const [n2t, setN2t] = useState(0)
+    const [op, setOp] = useState('')
+
     const [titulo1, setTitulo1] = useState("Digite alguma coisa")
     const [preTexto, setPreTexto] = useState('')
     const [titulo2, setTitulo2] = useState("Digite e envie o texto")
@@ -52,13 +57,8 @@ export default function Change(){
 
     return (
         <div className="change-page" style={{ backgroundColor: `${cor}`}}>
-            <header>
-                <Link to='/' className='voltar'>
-                    Voltar
-                </Link>
-                
-                <h1>Evento Change | React </h1>
-            </header>
+            <Header titulo="Change Page" />
+
             <section>
                 <div className="input">
                     <h2>{titulo1}</h2>

@@ -1,3 +1,4 @@
+import Header from '../../components/header'
 import './Api.scss'
 
 import { useState } from 'react'
@@ -22,9 +23,7 @@ export default function ApiContador(){
 
     return(
         <div className="contador-page">
-            <header>
-                <h1>API Contador | React</h1>
-            </header>
+            <Header titulo="Página api" />
             <section>
                 <h2>Contador</h2>
                 <div className="contador">

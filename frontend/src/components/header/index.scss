@@ -1,0 +1,25 @@
+.comp-header {
+    background-color: gray;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .voltar {
+        background-color: rgb(228, 224, 224);
+        color: black;
+        padding: 6px 12px;
+        border-radius: 4px;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
