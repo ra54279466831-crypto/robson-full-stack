@@ -20,6 +20,9 @@ export default function Home() {
             <li>
               <Link to='/change' className='link'>Change</Link>
             </li>
+            <li>
+              <Link to='/api' className='link'>Chamada API</Link>
+            </li>
           </ul>
         </nav>
       </section>
