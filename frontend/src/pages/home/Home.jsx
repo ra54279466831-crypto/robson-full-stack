@@ -23,6 +23,9 @@ export default function Home() {
             <li>
               <Link to='/api' className='link'>Chamada API</Link>
             </li>
+            <li>
+              <Link to='/ingresso' className='link'>Calcular ingresso</Link>
+            </li>
           </ul>
         </nav>
       </section>
